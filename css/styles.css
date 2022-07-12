@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+}
+
 :root {
   --project-color-blue: #2196f3;
   --project-color-dark: #212121;
@@ -11,6 +25,7 @@
   --button-shadow2: rgba(0, 0, 0, 0.01);
   --button-shadow3: rgba(0, 0, 0, 0.08);
   --button-shadow4: rgba(0, 0, 0, 0.11);
+  --border-top-logo: #ececec;
 }
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
@@ -21,16 +36,41 @@ body {
   letter-spacing: 0.03em;
   color: var(--project-color-gray);
   background-color: var(--project-color-white);
+  width: 1600px;
 }
-.menu-nav {
-  display: block;
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+.menu .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.menu {
+  border-bottom: 1px solid var(--border-top-logo);
+}
+
+/* .menu-nav {
+  display: flex;
+} */
 .menu-nav-logo {
   list-style-type: none;
   text-decoration: none;
+  /* display: flex; */
 }
 .menu-list {
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .logo-black {
@@ -41,12 +81,15 @@ body {
   /* identical to box height */
   text-decoration: none;
   color: var(--project-color-black);
+
+  margin-right: 93px;
 }
 .logo-blue {
   color: var(--project-color-blue);
 }
 
 .menu-nav-links {
+  display: block;
   font-weight: 500;
   line-height: 1.17;
   font-style: normal;
@@ -55,6 +98,7 @@ body {
   text-decoration: none;
   list-style-type: none;
   color: var(--project-color-dark);
+  margin-right: 46px;
 }
 
 .menu-nav-links:hover,
@@ -63,6 +107,7 @@ body {
 }
 .contact {
   list-style-type: none;
+  display: flex;
 }
 
 .contact-mail,
@@ -75,18 +120,29 @@ body {
 
   color: var(--project-color-dark);
 }
-
+.contact-mail {
+  margin-right: 50px;
+}
+.contact-tel {
+  margin-right: 227px;
+}
 .contact-mail:hover,
 .contact-tel:hover,
 .contact-mail:focus,
 .contact-tel:focus {
   color: var(--project-color-blue);
 }
-/* heder */
+/* heder motto*/
 
 .header {
   background-color: var(--header-backgroud-dark);
   text-align: center;
+}
+.header .container {
+  padding-top: 200px;
+  padding-left: 252px;
+  padding-right: 252px;
+  padding-bottom: 200px;
 }
 .motto-text {
   font-weight: 900;
@@ -96,6 +152,7 @@ body {
   text-transform: uppercase;
   color: var(--project-color-white);
   text-align: center;
+  max-width: 696px;
 }
 
 .order-button {
@@ -110,10 +167,29 @@ body {
   cursor: pointer;
   border-style: none;
   color: var(--project-color-white);
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
 }
+/* lorem ipsum */
+
 .advantages {
   list-style-type: none;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  font-size: 0;
 }
+.advantages li {
+  display: inline-block;
+  width: 270px;
+  font-size: 14px;
+}
+.advantages li:nth-child(-n + 3) {
+  margin-right: 30px;
+  /* border: 1px solid black; */
+}
+
 .advantages-title {
   font-weight: 700;
   line-height: 1;
@@ -124,27 +200,58 @@ body {
   line-height: 1.71;
   color: var(--project-color-gray);
 }
-
+/* ourwork */
+.ourwork {
+  padding: 0px;
+  font-size: 0;
+}
 .ourwork-title {
   font-weight: 700;
   line-height: 1.17;
   color: var(--project-color-dark);
   text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
 }
 .ourwork-photos {
   list-style-type: none;
+  padding-left: 0px;
 }
+.ourwork-photos li {
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-left: 0px;
+  object-fit: contain;
+  text-align: center;
+}
+.ourwork-photos li:nth-child(-n + 2) {
+  margin-right: 30px;
+}
+/* ourwork */
 .team {
   background-color: var(--team-backgroud-lumio);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list li {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 .team-title {
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   color: var(--project-color-dark);
   text-align: center;
+  margin-bottom: 50px;
 }
 .team-list {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-photo-name {
@@ -152,6 +259,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 30px;
   color: var(--project-color-dark);
 }
 
@@ -159,10 +267,17 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  margin-top: 10px;
   color: var(--project-color-gray);
 }
+/* footer */
 .foot {
   background-color: var(--header-backgroud-dark);
+  flex-direction: column;
+  min-height: 252px;
+  padding-left: 15px;
+  padding-top: 60px;
 }
 .adress-street {
   color: var(--project-color-white);
@@ -178,7 +293,10 @@ body {
   line-height: 1.71;
   color: var(--tel-mail-footer);
 }
-
+.foot-mail > li {
+  margin-bottom: 9px;
+  margin-top: 0px;
+}
 .logo-white {
   font-family: 'Raleway';
   font-weight: 700;
@@ -187,9 +305,26 @@ body {
   text-decoration: none;
   color: var(--project-color-white);
 }
+.adress {
+  margin-top: 20px;
+
+  /* justify-content: space-between; */
+}
+.adress-list {
+  padding-left: 0%;
+  margin-bottom: 9px;
+}
+.adress-list:nth-child(-n + 2) {
+  margin-top: 9px;
+}
+/* footer */
 /* portfolio */
 .filters-list {
   list-style: none;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  justify-content: center;
 }
 .filters-button {
   font-family: 'Roboto';
@@ -202,7 +337,10 @@ body {
   color: var(--project-color-dark);
   border-style: none;
   border-radius: 4px;
-  color: var(--project-color-dark);
+  padding: 6px 22px;
+}
+.filters-list li:nth-child(-n + 4) {
+  margin-right: 8px;
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -214,6 +352,9 @@ body {
 }
 .portfolio-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .portfolio-photo-title {
   font-weight: 700;
