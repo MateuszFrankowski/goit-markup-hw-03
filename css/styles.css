@@ -26,6 +26,7 @@
   --button-shadow3: rgba(0, 0, 0, 0.08);
   --button-shadow4: rgba(0, 0, 0, 0.11);
   --border-top-logo: #ececec;
+  --portfolio-pictures-border: #eeeeee;
 }
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
@@ -202,7 +203,7 @@ body {
 }
 /* ourwork */
 .ourwork {
-  padding: 0px;
+  padding: 94px 0;
   font-size: 0;
 }
 .ourwork-title {
@@ -342,6 +343,7 @@ body {
 .filters-list li:nth-child(-n + 4) {
   margin-right: 8px;
 }
+
 .filters-button:hover,
 .filters-button:focus {
   background-color: var(--project-color-blue);
@@ -350,21 +352,34 @@ body {
     0px 2px 2px var(--button-shadow4);
   cursor: pointer;
 }
+
 .portfolio-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 94px;
+}
+.portfolio-list li {
+  border: 1px solid var(--portfolio-pictures-border);
+}
+.portfolio-list li:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+.portfolio-picture figcaption {
+  padding: 20px 24px;
 }
 .portfolio-photo-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--project-color-dark);
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
+
   color: var(--project-color-gray);
 }
