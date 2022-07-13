@@ -179,17 +179,16 @@ body {
   list-style-type: none;
   padding-top: 94px;
   /* padding-bottom: 94px; */
-  font-size: 0;
+  display: flex;
+  gap: 30px;
 }
 .advantages li {
-  display: inline-block;
   width: 270px;
   font-size: 14px;
 }
-.advantages li:nth-child(-n + 3) {
-  margin-right: 30px;
-  /* border: 1px solid black; */
-}
+/* .advantages li:nth-child(-n + 3) {
+  margin-right: 30px; */
+/* border: 1px solid black; */
 
 .advantages-title {
   font-weight: 700;
@@ -218,17 +217,18 @@ body {
   list-style-type: none;
   padding-left: 0px;
   font-size: 0px;
+  display: flex;
+  gap: 30px;
 }
 .ourwork-photos li {
-  display: inline-block;
   /* border: 1px solid black; */
   margin-left: 0px;
   object-fit: contain;
   /* text-align: center; */
 }
-.ourwork-photos li:nth-child(-n + 2) {
+/* .ourwork-photos li:nth-child(-n + 2) {
   margin-right: 30px;
-}
+} */
 /* ourwork */
 .team {
   background-color: var(--team-backgroud-lumio);
