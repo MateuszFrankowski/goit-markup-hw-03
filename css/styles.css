@@ -178,7 +178,7 @@ body {
 .advantages {
   list-style-type: none;
   padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
   font-size: 0;
 }
 .advantages li {
@@ -217,13 +217,14 @@ body {
 .ourwork-photos {
   list-style-type: none;
   padding-left: 0px;
+  font-size: 0px;
 }
 .ourwork-photos li {
   display: inline-block;
   /* border: 1px solid black; */
   margin-left: 0px;
   object-fit: contain;
-  text-align: center;
+  /* text-align: center; */
 }
 .ourwork-photos li:nth-child(-n + 2) {
   margin-right: 30px;
