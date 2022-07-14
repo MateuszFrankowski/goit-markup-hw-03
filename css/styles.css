@@ -366,10 +366,11 @@ body {
 .portfolio-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .portfolio-list li {
+  width: 370px;
   border: 1px solid var(--portfolio-pictures-border);
 }
 .portfolio-list li:nth-child(-n + 6) {
@@ -377,6 +378,9 @@ body {
 }
 .portfolio-picture figcaption {
   padding: 20px 24px;
+}
+.portfolio-picture figure img {
+  object-fit: cover;
 }
 .portfolio-photo-title {
   font-weight: 700;
